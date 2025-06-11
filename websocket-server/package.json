@@ -1,0 +1,36 @@
+{
+    "name": "websocket-server",
+    "version": "1.0.0",
+    "description": "WebSocket server for stock trading with TrueData real-time market data",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "start:truedata": "node server2.js",
+        "dev": "nodemon server.js",
+        "dev:truedata": "nodemon server2.js",
+        "populate-instruments": "node scripts/populate-instruments.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "kiteconnect": "^4.0.3",
+        "redis": "^4.7.1",
+        "truedata-nodejs": "^1.0.22",
+        "ws": "^8.14.2"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.2"
+    },
+    "keywords": [
+        "websocket",
+        "stock",
+        "trading",
+        "truedata",
+        "market-data",
+        "real-time"
+    ],
+    "author": "",
+    "license": "ISC"
+}

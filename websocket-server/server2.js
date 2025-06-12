@@ -547,7 +547,7 @@ process.on('SIGINT', () => {
 });
 
 // Start the server
-const PORT = process.env.WS_PORT_TRUEDATA || 8081; // Different port to avoid conflict
+const PORT = process.env.WS_PORT_TRUEDATA || 8080; // TrueData server port
 server.listen(PORT, async () => {
     console.log('🚀 TrueData WebSocket server starting...');
     console.log(`🌐 Server running on port ${PORT}`);
